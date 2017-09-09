@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>Processing Stuff</title>
+    <style type='text/css'>
+    h1 {
+    color: aqua;
+    font-family: fantasy;
+    text-decoration: line-through;
+    font-size: 200%;
+        }
+    p {
+    color: chartreuse;
+    font-family: sans-serif;
+    text-decoration: inherit;
+    font-size: 200%;
+        }
+    #home {
+        background-color: black;
+            border: 2px solid green;
+            padding: 14px 40px;
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href='index.html'><button id='home'>Home</button></a>
+    <a href='tips&tricks.html'><button id='home'>Tips and Tricks</button></a>
+    <h1>Processing Stuff</h1>
+    <p>Here is where I mess around with Processing.</p>
+    <script>
+    function setup() { 
+        createCanvas(400, 400, WEBGL);
+    } 
+
+    let angle = 0;
+
+    function draw() { 
+        background(0, 200, 0);
+	   const z = map(sin(frameCount / 20.0), -1, 1, -500, 100);
+	   rotateY(angle);
+	   rotateX(angle);
+	   angle += .05;
+	   box(100);
+    }
+    </script>
+    </body></html>
