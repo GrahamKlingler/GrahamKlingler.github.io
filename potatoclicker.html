@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <title>Potato Clicker</title>
+        
+        <style type='text/css'>
+            .h1 {
+                color: forestgreen;
+                font-size: 200%;
+                font-family: fantasy;
+                }
+            #rules {
+                color: aqua;
+                background-color: black;
+                border: 2px solid green;
+                padding: 14px 40px;
+                text-align: center;
+                text-decoration: underline;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 8px;
+                
+            }
+            #home {
+                background-color: black;
+                border: 2px solid green;
+                padding: 14px 40px;
+                text-align: center;
+                text-decoration: underline;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 8px;
+                color: white;
+        }
+
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><button id='home'>Home</button></a>
+        <a href="games.html"><button id='home'>Games</button></a>
+        <a href="coolstuf.html"><button id='home'>Cool Stuff</button></a>
+        <a href='potatorules.html'><button id='rules'>Rules</button></a>
+        <h1>Potato Clicker</h1>
+        <h2 id='clicks'>Click the Potato</h2>
+        <h3 id='label'>Amount of Clicks:</h3>
+        <p id='clickamount'>0</p>
+        <h3>Amount of Gold:</h3>
+        <p id='goldamount'>0</p>
+        <div class='game-object'>
+        <script type='text/javascript'>
+            let clicks = 0;
+            let gold = 0;
+            let placeHolder = 100;
+            
+            function pototoClicked() {
+                clicks += 1
+                document.getElementById("clickamount").textContent = clicks;
+                if (clicks == placeHolder) {
+                    gold += 1;
+                    placeHolder += 100;
+                    document.getElementById("goldamount").textContent = gold;
+             }
+
+            }
+        </script>
+        <button onclick='pototoClicked()'><img src='Potoatao.png'></button>
+        </div>
+    </body>
+</html>
