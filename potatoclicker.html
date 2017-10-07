@@ -51,14 +51,14 @@
         <script type='text/javascript'>
             let clicks = 0;
             let gold = 0;
-            let placeHolder = 100;
+            let placeHolder = 50;
             
             function pototoClicked() {
                 clicks += 1
                 document.getElementById("clickamount").textContent = clicks;
                 if (clicks == placeHolder) {
                     gold += 1;
-                    placeHolder += 100;
+                    placeHolder += 50;
                     document.getElementById("goldamount").textContent = gold;
              }
 
