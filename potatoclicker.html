@@ -76,7 +76,7 @@
             function pototoClicked() {
                 clicks += cpc
                 document.getElementById("clickamount").textContent = clicks;
-                if (clicks == placeHolder) {
+                if (clicks >= placeHolder) {
                     gold += 1;
                     placeHolder += 50;
                     document.getElementById("goldamount").textContent = gold;
