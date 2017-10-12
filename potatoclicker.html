@@ -5,6 +5,8 @@
     <title>Potato Clicker</title>
         
         <style type='text/css'>
+            
+        
             .h1 {
                 color: forestgreen;
                 font-size: 200%;
@@ -39,28 +41,27 @@
             position: relative;
             width: 25%;
             }
-            #mcd1 {
-            position: absolute;
-            top: 150px;
-            left: 0;
-            width: 100%;
-            }
+            
             #mcd {
                 width: 25%;
                 height: 25%;
+            }
             
         </style>
     </head>
     <body>
+        
         <a href="index.html"><button id='home'>Home</button></a>
         <a href="games.html"><button id='home'>Games</button></a>
         <a href="coolstuf.html"><button id='home'>Cool Stuff</button></a>
         <a href='potatorules.html'><button id='rules'>Rules</button></a>
         <h1>Potato Clicker</h1>
-        <div class='image'>
-        <button id='mcdonalds'><h2 id='mcd1'>French Fry Worker</h2><img id='mcd' src='mcdonalds.jpg'></button>
+        <div class='container'>
+            <img id='mcd' src='mcdonalds.jpg' onclick='workerBought()'>
+            <div class='centered'>50 Gold:Dead on the Inside-1 more potato per click.</div>
         </div>
         <h2 id='clicks'>Click the Potato</h2>
+        <p id='error'></p>
         <h3 id='label'>Amount of Clicks:</h3>
         <p id='clickamount'>0</p>
         <h3>Amount of Gold:</h3>
@@ -68,18 +69,30 @@
         <div class='game-object'>
         <script type='text/javascript'>
             let clicks = 0;
+            let cpc = 1;
             let gold = 0;
             let placeHolder = 50;
             
             function pototoClicked() {
-                clicks += 1
+                clicks += cpc
                 document.getElementById("clickamount").textContent = clicks;
                 if (clicks == placeHolder) {
                     gold += 1;
                     placeHolder += 50;
                     document.getElementById("goldamount").textContent = gold;
              }
-
+                
+            }
+            function workerBought() {
+                if (gold >= 1) {
+                    cpc += 1
+                    gold -= 1
+                    document.getElementById("error").textContent = "Item Bought";
+                    document.getElementById("goldamount").textContent = gold;
+                }
+                else {
+                    document.getElementById("error").textContent = "Not enough Gold";
+                }
             }
         </script>
         <button onclick='pototoClicked()'><img src='Potoatao.png'></button>
