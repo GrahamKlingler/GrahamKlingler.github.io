@@ -38,8 +38,8 @@
                 color: white;
         }
             #image {
-            position: relative;
-            width: 25%;
+                position: relative;
+                width: 25%;
             }
             
             #mcd {
@@ -62,7 +62,7 @@
         </div>
         <h2 id='clicks'>Click the Potato</h2>
         <p id='error'></p>
-        <h3 id='label'>Amount of Clicks:</h3>
+        <h3 id='label'>Number of Clicks:</h3>
         <p id='clickamount'>0</p>
         <h3>Amount of Gold:</h3>
         <p id='goldamount'>0</p>
@@ -78,7 +78,7 @@
                 document.getElementById("clickamount").textContent = clicks;
                 if (clicks >= placeHolder) {
                     gold += 1;
-                    placeHolder += 50;
+                    placeHolder += 100;
                     document.getElementById("goldamount").textContent = gold;
              }
                 
