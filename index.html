@@ -3,6 +3,14 @@
 <head>
     <title>GCGames</title>
     <style type="text/css">
+        #playpause {
+            font-family: monospace;
+            background-color: greenyellow;
+            padding: 14px 40px;
+            border: 2px solid green;
+            font-size: 16px;
+            color: black;
+        }
         #home {
             font-family: cursive;
             background-color: black;
@@ -60,7 +68,24 @@
     <p id='introParagraph' style="background-color: #C0B2AF">Here, we spend away our boredom</p>
     <h2 id='feat' style="background-color: #C0B2AF">Here are some games we will add...</h2>
     <p id='featp' style="background-color: #C0B2AF">Potato Clicker, some games...</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4txVqr1eNwc" frameborder="0" allowfullscreen></iframe>
+    <div class="text-align:center">
+    <button id='playpause' onclick='playPause()'>Play/Pause</button>
+    <br><br>
+    <video id='video1' onclick='playPause()' width="400" height="315" autoplay>
+        <source src="Cool%20Guy%20has%20Chill%20Day.mp4" type="video/mp4">
+        <source src='Cool%20Guy%20has%20Chill%20Day.ogg' type='video/ogg'>
+    </video>
+    <script type='text/javascript'>
+        var myVideo = document.getElementById("video1"); 
+
+            function playPause() { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+            } 
+        </script>
+    </div>
     <a href='credits.html'><button id='credits'>Credits</button></a>
 </body>
 </html>
