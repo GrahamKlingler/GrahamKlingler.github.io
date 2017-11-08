@@ -1,0 +1,95 @@
+ #login{
+            font-family: cursive;
+            background-color: black;
+            border: 2px solid green;
+            padding: 14px 40px;
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+    }
+#playpause {
+            font-family: monospace;
+            background-color: greenyellow;
+            padding: 14px 40px;
+            border: 2px solid green;
+            font-size: 16px;
+            color: black;
+            cursor: grab;
+        }
+#home {
+            font-family: cursive;
+            background-color: black;
+            border: 2px solid green;
+            padding: 14px 40px;
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+            cursor: grab;
+        }
+#credits {
+            font-family: cursive;
+            background-color: chartreuse;
+            border: 2px solid black;
+            padding: 14px 40px;
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+            border-radius: 8px;
+            color: black;
+        }
+button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 40px;
+            margin: 8px 0;
+            border: none;
+            cursor: grab;
+            display: inline;
+        }
+        #ghostrecon {
+            background-color: black;
+            border: 2px solid green;
+            padding: 14px 40px;
+            text-align: center;
+            display: grid;
+            color: crimson;
+            border-radius: 8px;
+            text-decoration: underline;
+        }
+        #payday {
+            background-color: white;
+            border: 2px solid black;
+            padding: 14px 40px;
+            text-align: center;
+            display: grid;
+            color: aqua;
+            border-radius: 8px;
+            text-decoration: underline;
+        }
+        #starbound {
+            background-color: blue;
+            border: 2px solid black;
+            padding: 14px 40px;
+            text-align: center;
+            display: grid;
+            color: yellow;
+            border-radius: 8px;
+            text-decoration: underline;
+        }
+        #HMWN2 {
+            font-family: cursive;
+            background-color: darkslateblue;
+            border: 2px solid black;
+            padding: 14px 40px;
+            text-align: center;
+            display: grid;
+            color: deeppink;
+            border-radius: 8px;
+            text-decoration: underline;
+        }

@@ -2,184 +2,9 @@
 <html>
 <head>
     <title>GCGames</title>
+    <link href="styles_buttons.css" type="text/css" rel="stylesheet"/>
+    <link href="styles_logins.css" type="text/css" rel="stylesheet"/>
     <style type="text/css">
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 40px;
-            margin: 8px 0;
-            border: none;
-            cursor: grab;
-            display: inline;
-        }
-
-        
-            padding: 14px 20px;
-            background-color: #f44336;
-        }
-
-        
-        .cancelbtn,.signupbtn {
-            float: left;
-            width: 50%;
-        }
-
-        
-        .container {
-            padding: 16px;
-        }
-
-        
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-            padding-top: 60px;
-        }
-
-        
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto 15% auto; 
-            border: 1px solid #888;
-            width: 80%; 
-        }
-
-        
-        .close {
-            position: absolute;
-            right: 35px;
-            top: 15px;
-            color: #000;
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: red;
-            cursor: pointer;
-        }
-
-        
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        
-        @media screen and (max-width: 300px) {
-            .cancelbtn, .signupbtn {
-                width: 100%;
-            }
-        }
-            #login{
-                font-family: cursive;
-                background-color: black;
-                border: 2px solid green;
-                padding: 14px 40px;
-                text-align: center;
-                text-decoration: underline;
-                display: inline-block;
-                font-size: 16px;
-                border-radius: 8px;
-                color: white;
-    }
-            .modal {
-                display: none; 
-                position: fixed; 
-                z-index: 1; 
-                left: 0;
-                top: 0;
-                width: 100%; 
-                height: 100%; 
-                overflow: auto; 
-                background-color: rgb(0,0,0); 
-                background-color: rgba(0,0,0,0.4); 
-                padding-top: 60px;
-            }
-
-            
-            .modal-content {
-                background-color: #fefefe;
-                margin: 5px auto; 
-                border: 1px solid #888;
-                width: 80%; 
-            }
-
-            
-            .close {
-                
-                position: absolute;
-                right: 25px;
-                top: 0; 
-                color: #000;
-                font-size: 35px;
-                font-weight: bold;
-            }
-
-            
-            .close:hover,
-            .close:focus {
-                color: red;
-                cursor: pointer;
-            }
-
-            
-            .animate {
-                -webkit-animation: animatezoom 0.6s;
-                animation: animatezoom 0.6s
-            }
-
-            @-webkit-keyframes animatezoom {
-                from {-webkit-transform: scale(0)} 
-                to {-webkit-transform: scale(1)}
-            }
-
-            @keyframes animatezoom {
-                from {transform: scale(0)} 
-                to {transform: scale(1)}
-            }
-        #playpause {
-            font-family: monospace;
-            background-color: greenyellow;
-            padding: 14px 40px;
-            border: 2px solid green;
-            font-size: 16px;
-            color: black;
-            cursor: grab;
-        }
-        #home {
-            font-family: cursive;
-            background-color: black;
-            border: 2px solid green;
-            padding: 14px 40px;
-            text-align: center;
-            text-decoration: underline;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 8px;
-            color: white;
-            cursor: grab;
-        }
         #greeting {
             color: black;
             font-size: 300%;
@@ -200,17 +25,7 @@
             font-size: 200%;
             font-family: cursive;
         }
-        #credits {
-            font-family: cursive;
-            background-color: chartreuse;
-            border: 2px solid black;
-            padding: 14px 40px;
-            text-align: center;
-            text-decoration: underline;
-            display: inline-block;
-            border-radius: 8px;
-            color: black;
-        }
+        
        
         h1 {text-align: center}
         h2 {text-align: center}
@@ -230,7 +45,7 @@
     <div class="text-align:center">
     <button id='playpause' onclick='playPause()'>Play/Pause</button>
     <br><br>
-    <video id='video1' onclick='playPause()' width="400" height="315" autoplay>
+    <video id='video1' onclick='playPause()' width="400" height="315">
         <source src="Cool%20Guy%20has%20Chill%20Day.mp4" type="video/mp4">
         <source src='Cool%20Guy%20has%20Chill%20Day.ogg' type='video/ogg'>
     </video>
@@ -278,7 +93,7 @@ class="close" title="Close Modal">&times;</span>
   
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="avatar.jpg" alt="Avatar" class="avatar" width="25%">
     </div>
 
     <div class="container">
