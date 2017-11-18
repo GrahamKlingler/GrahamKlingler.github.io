@@ -30,6 +30,12 @@
         h1 {text-align: center}
         h2 {text-align: center}
         p {text-align: center}
+        
+        .greeting {
+            border: 2px solid red;
+            background-color: bisque;
+            padding: inherit;
+        }
     </style>
 </head>
 <body background="webpagebackground.jpg">
@@ -38,10 +44,12 @@
     <a href="coolstuf.html"><button id='home'>Cool Stuff</button></a>
     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
     <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
-    <h1 id='greeting' style="background-color: #C0B2AF">Welcome to Graham and Conny's game site for unblocked games in class!</h1>
-    <p id='introParagraph' style="background-color: #C0B2AF">Here, we spend away our boredom</p>
-    <h2 id='feat' style="background-color: #C0B2AF">Here are some games we will add...</h2>
-    <p id='featp' style="background-color: #C0B2AF">Potato Clicker, some games...</p>
+    <div class="greeting">
+    <h1 id='greeting'>Welcome to Graham and Conny's game site for unblocked games in class!</h1>
+    <p id='introParagraph'>Here, we spend away our boredom</p>
+    <h2 id='feat'>Here are some games we will add...</h2>
+    <p id='featp'>Potato Clicker, some games...</p>
+    </div>
     <div class="text-align:center">
     <button id='playpause' onclick='playPause()'>Play/Pause</button>
     <br><br>
